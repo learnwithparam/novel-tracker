@@ -11,13 +11,33 @@
 </head>
 
 <body>
-  <div class="container p-8">
+  <div class="w-full py-6 bg-blue-900">
+    <nav class="container flex w-4/5 mx-auto">
+      <div role="title" class="flex flex-1 flex-wrap items-center">
+        <span class="text-green-500 text-2xl uppercase font-bold">corona &nbsp;</span>
+        <span class="text-pink-400 text-2xl uppercase font-bold">tracker</span>
+        <div class="inline-flex ml-6 w-full max-w-xs px-2 h-12 rounded border  border-grey-light bg-white shadow-md">
+          <div class="flex -mr-px">
+            <span class="flex items-center leading-normal whitespace-no-wrap text-grey-dark text-sm"><img
+                src="assets/search.svg" alt="search" /></span>
+          </div>
+          <input type="text"
+            class="flex-shrink  px-2 outline-none flex-grow flex-auto leading-normal flex-1 border-none relative">
+        </div>
+        <div class="flex ml-auto items-center">
+          <a href="index.html"
+            class="inline-block p-3 uppercase font-bold rounded-lg hover:text-white text-gray-600">home</a>
+          <a href="country.html"
+            class="inline-block p-3 uppercase font-bold rounded-lg hover:text-white bg-gray-900 text-white">country</a>
+          <img class="ml-4 cursor-pointer" src="assets/light.svg" alt="search" />
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container w-4/5 mx-auto">
     <h1 class="text-4xl font-bold text-blue-500">Country</h1>
     <h2 class="mt-4"> Image of the day:</h2>
     <img class="mt-4 rounded-lg shadow-xl" src="https://source.unsplash.com/random/600x400" alt="unsplash random image">
-    <div class="mt-8">
-      <a href="index.html" class="inline-block bg-blue-500 px-8 py-2 text-white"> Home</a>
-    </div>
   </div>
 </body>
 
