@@ -16,26 +16,48 @@
       <div role="title" class="flex flex-1 flex-wrap items-center">
         <span class="text-green-500 text-2xl uppercase font-bold">corona &nbsp;</span>
         <span class="text-pink-400 text-2xl uppercase font-bold">tracker</span>
-        <div class="inline-flex ml-6 w-full max-w-xs px-2 h-12 rounded border  border-grey-light bg-white shadow-md">
+        <div
+          class="hidden lg:inline-flex ml-6 w-full max-w-xs px-2 h-12 rounded border  border-grey-light bg-white shadow-md">
           <div class="flex -mr-px">
-            <span class="flex items-center leading-normal whitespace-no-wrap text-grey-dark text-sm"><img
-                src="assets/search.svg" alt="search" /></span>
+            <span class="flex items-center leading-normal whitespace-no-wrap text-grey-dark text-sm text-gray-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21 21L15.8 15.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
           </div>
           <input type="text"
             class="flex-shrink  px-2 outline-none flex-grow flex-auto leading-normal flex-1 border-none relative">
         </div>
         <div class="flex ml-auto items-center">
           <a href="index.html"
-            class="inline-block p-3 uppercase font-bold rounded-lg hover:text-white bg-gray-900 text-white">home</a>
+            class="inline-block p-3 hidden lg:inline-block uppercase font-bold rounded-lg hover:text-white bg-gray-900 text-white">home</a>
           <a href="countries.html"
-            class="inline-block p-3 uppercase font-bold rounded-lg hover:text-white text-gray-600">countries</a>
+            class="inline-block p-3 hidden lg:inline-block uppercase font-bold rounded-lg hover:text-white text-gray-600">countries</a>
           <img class="ml-4" src="assets/light.svg" alt="search" />
         </div>
       </div>
     </nav>
   </div>
   <div class="container w-4/5 mx-auto mt-6">
-    <div class="grid grid-cols-2 gap-6">
+    <div class="flex lg:hidden mb-6 w-full h-12 rounded border  border-grey-light bg-white shadow-md">
+      <div class="flex -mr-px">
+        <span class="flex items-center leading-normal whitespace-no-wrap text-grey-dark text-sm text-gray-300"><svg
+            width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 21L15.8 15.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg></span>
+      </div>
+      <input type="text"
+        class="flex-shrink  px-2 outline-none flex-grow flex-auto leading-normal flex-1 border-none relative">
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2  gap-6">
       <div class="grid grid-cols-2 gap-6">
         <div class="bg-darken-blue-100 shadow-lg rounded-sm p-4">
           <div class="text-md text-gray-500 uppercase font-bold">confirmed</div>
@@ -92,18 +114,20 @@
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-pink-400 text-center">
           total confirmed</div>
         <div
-          class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-500 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-500 text-center">
           new cases</div>
         <div
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-green-500 text-center">
           total recovered</div>
         <div
-          class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-500 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-500 text-center">
           new recovered</div>
         <div
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-600 text-center">
           total deaths</div>
-        <div class="flex-1 bg-darken-blue-100 px-4 py-2 uppercase text-sm font-bold text-gray-500 text-center">new deaths</div>
+        <div
+          class="flex-1 hidden lg:block bg-darken-blue-100 px-4 py-2 uppercase text-sm font-bold text-gray-500 text-center">
+          new deaths</div>
       </div>
       <div class="flex justify-around border-b-2 border-darken-blue-200">
         <div
@@ -113,18 +137,20 @@
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           1,235,678</div>
         <div
-          class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
-          class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           230</div>
-        <div class="flex-1 bg-darken-blue-100 px-4 py-2 uppercase text-base text-right font-bold text-gray-300 text-center">2,347</div>
+        <div
+          class="flex-1 hidden lg:block bg-darken-blue-100 px-4 py-2 uppercase text-base text-right font-bold text-gray-300 text-center">
+          2,347</div>
       </div>
       <div class="flex justify-around border-b-2 border-darken-blue-200">
         <div
@@ -134,18 +160,20 @@
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           1,235,678</div>
         <div
-          class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
-          class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           230</div>
-        <div class="flex-1 bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">2,347</div>
+        <div
+          class="flex-1 hidden lg:block bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">
+          2,347</div>
       </div>
       <div class="flex justify-around border-b-2 border-darken-blue-200">
         <div
@@ -155,18 +183,20 @@
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           1,235,678</div>
         <div
-          class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
-          class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           230</div>
-        <div class="flex-1 bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">2,347</div>
+        <div
+          class="flex-1 hidden lg:block bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">
+          2,347</div>
       </div>
       <div class="flex justify-around border-b-2 border-darken-blue-200">
         <div
@@ -176,19 +206,23 @@
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           1,235,678</div>
         <div
-          class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
-          class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
+          class="flex-1 hidden lg:block bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           2,347</div>
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           230</div>
-        <div class="flex-1 bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">2,347</div>
+        <div
+          class="flex-1 hidden lg:block bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">
+          2,347</div>
       </div>
+    </div>
+  </div>
     </div>
   </div>
 </body>
