@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Home</title>
+  <title>Countries</title>
 </head>
 
 <body class="bg-darken-blue-200">
@@ -26,63 +26,15 @@
         </div>
         <div class="flex ml-auto items-center">
           <a href="index.html"
-            class="inline-block p-3 uppercase font-bold rounded-lg hover:text-white bg-gray-900 text-white">home</a>
+            class="inline-block p-3 uppercase font-bold rounded-lg hover:text-white text-gray-600">home</a>
           <a href="countries.html"
-            class="inline-block p-3 uppercase font-bold rounded-lg hover:text-white text-gray-600">countries</a>
-          <img class="ml-4" src="assets/light.svg" alt="search" />
+            class="inline-block p-3 uppercase font-bold rounded-lg hover:text-white bg-gray-900 text-white">countries</a>
+          <img class="ml-4 cursor-pointer" src="assets/light.svg" alt="search" />
         </div>
       </div>
     </nav>
   </div>
-  <div class="container w-4/5 mx-auto mt-6">
-    <div class="grid grid-cols-2 gap-6">
-      <div class="grid grid-cols-2 gap-6">
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm p-4">
-          <div class="text-md text-gray-500 uppercase font-bold">confirmed</div>
-          <div class="text-4xl text-gray-500 uppercase font-bold mt-2 leading-8 text-pink-400">1,330,492</div>
-        </div>
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm p-4">
-          <div class="text-md text-gray-500 uppercase font-bold">active</div>
-          <div class="text-4xl text-gray-500 uppercase font-bold mt-2 leading-8 text-blue-500">978,913</div>
-        </div>
-      </div>
-      <div class="grid grid-cols-2 gap-6">
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm p-4">
-          <div class="text-md text-gray-500 uppercase font-bold">recovered</div>
-          <div class="text-4xl text-gray-500 uppercase font-bold mt-2 leading-8 text-green-600">277,707</div>
-        </div>
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm p-4">
-          <div class="text-md text-gray-500 uppercase font-bold">decease</div>
-          <div class="text-4xl text-gray-500 uppercase font-bold mt-2 leading-8 text-gray-700">73,872</div>
-        </div>
-      </div>
-      <div class="grid grid-cols-2 gap-2 text-center">
-        <div class="col-span-2 bg-darken-blue-100 shadow-lg rounded-sm rounded-b-none p-2">
-          <div class="text-md text-gray-500 uppercase font-bold">ACTIVE CASES</div>
-        </div>
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm rounded-t-none py-4">
-          <div class="text-4xl text-gray-500 uppercase font-bold leading-8 text-blue-500">95%</div>
-          <div class="text-md text-gray-500 uppercase font-bold mt-2">mild infection</div>
-        </div>
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm rounded-t-none p-4">
-          <div class="text-4xl text-gray-500 uppercase font-bold leading-8 text-pink-400">5%</div>
-          <div class="text-md text-gray-500 uppercase font-bold mt-2">critical condition</div>
-        </div>
-      </div>
-      <div class="grid grid-cols-2 gap-2  text-center">
-        <div class="col-span-2 bg-darken-blue-100 shadow-lg rounded-sm rounded-b-none p-2">
-          <div class="text-md text-gray-500 uppercase font-bold">CLOSED CASES</div>
-        </div>
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm rounded-t-none p-4">
-          <div class="text-4xl text-gray-500 uppercase font-bold leading-8 text-green-600">79%</div>
-          <div class="text-md text-gray-500 uppercase font-bold mt-2">recovered/discharged</div>
-        </div>
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm rounded-t-none p-4">
-          <div class="text-4xl text-gray-500 uppercase font-bold leading-8 text-gray-700">21%</div>
-          <div class="text-md text-gray-500 uppercase font-bold mt-2">death percentage</div>
-        </div>
-      </div>
-    </div>
+  <div class="container w-4/5 mx-auto  mt-6">
     <div class="flex flex-col mt-5 shadow-lg rounded-lg">
       <div class="flex justify-around border-b-2 border-darken-blue-200">
         <div
@@ -103,12 +55,13 @@
         <div
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-600 text-center">
           total deaths</div>
-        <div class="flex-1 bg-darken-blue-100 px-4 py-2 uppercase text-sm font-bold text-gray-500 text-center">new deaths</div>
+        <div class="flex-1 bg-darken-blue-100 px-4 py-2 uppercase text-sm font-bold text-gray-500 text-center">new
+          deaths</div>
       </div>
       <div class="flex justify-around border-b-2 border-darken-blue-200">
         <div
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-500">
-          USA</div>
+          <a href="country.html">USA</a></div>
         <div
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           1,235,678</div>
@@ -124,12 +77,14 @@
         <div
           class="flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           230</div>
-        <div class="flex-1 bg-darken-blue-100 px-4 py-2 uppercase text-base text-right font-bold text-gray-300 text-center">2,347</div>
+        <div
+          class="flex-1 bg-darken-blue-100 px-4 py-2 uppercase text-base text-right font-bold text-gray-300 text-center">
+          2,347</div>
       </div>
       <div class="flex justify-around border-b-2 border-darken-blue-200">
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-500">
-          ITALY</div>
+          <a href="country.html">ITALY</a></div>
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           1,235,678</div>
@@ -145,12 +100,14 @@
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           230</div>
-        <div class="flex-1 bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">2,347</div>
+        <div
+          class="flex-1 bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">
+          2,347</div>
       </div>
       <div class="flex justify-around border-b-2 border-darken-blue-200">
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-500">
-          SPAIN</div>
+          <a href="country.html">SPAIN</a></div>
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           1,235,678</div>
@@ -166,12 +123,14 @@
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           230</div>
-        <div class="flex-1 bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">2,347</div>
+        <div
+          class="flex-1 bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">
+          2,347</div>
       </div>
       <div class="flex justify-around border-b-2 border-darken-blue-200">
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-sm font-bold text-gray-500">
-          GERMANY</div>
+          <a href="country.html">GERMANY</a></div>
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           1,235,678</div>
@@ -187,7 +146,9 @@
         <div
           class="flex-1 bg-darken-blue-100 py-2 px-4 border-r-2 border-darken-blue-200 uppercase text-base text-right font-bold text-gray-300 text-center">
           230</div>
-        <div class="flex-1 bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">2,347</div>
+        <div
+          class="flex-1 bg-darken-blue-100 py-2 px-4 uppercase text-base text-right font-bold text-gray-300 text-center">
+          2,347</div>
       </div>
     </div>
   </div>
