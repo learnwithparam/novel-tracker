@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
+
+.nav-link {
+  @apply inline-block p-3 hidden uppercase font-bold rounded-lg;
+}
+
+.nav-link:hover {
+  @apply text-white;
+}
+
+.info-box {
+  @apply bg-darken-blue-100 shadow-lg rounded-sm;
+}
+
+.info-box-label {
+  @apply text-gray-500 uppercase font-bold;
+}
+
+.info-box-numbers {
+  @apply text-4xl leading-8;
+}
+
+.country-list-box {
+  @apply flex-1 bg-darken-blue-100 px-4 py-2 border-r-2 border-darken-blue-200 uppercase font-bold;
+}
+
+.country-list-box-header {
+  @apply country-list-box text-sm;
+}
+
+.country-list-box-name {
+  @apply country-list-box-header text-gray-500;
+}
+
+.country-list-box-values {
+  @apply country-list-box text-gray-300 text-base text-right;
+}
+
+.mobile-nav-menu-container {
+  @apply grid grid-cols-3 fixed w-full bottom-0 left-0 shadow-top-xl bg-darken-blue-200 text-gray-300;
+}
+
+.mobile-nav-items {
+  @apply p-8 flex justify-center items-center;
+}
+
 @tailwind utilities;
