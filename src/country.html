@@ -10,12 +10,17 @@
   <title>Country</title>
 </head>
 
-<body class="bg-darken-blue-200 pb-24 lg:pb-0">
-  <div class="w-full py-6 bg-darken-blue-100 shadow-lg">
+<body class="bg-background-primary pb-24 lg:pb-0">
+  <div class="w-full py-6 bg-background-secondary text-primary shadow-lg">
     <nav class="container flex w-4/5 mx-auto">
       <div role="title" class="flex flex-1 flex-wrap items-center">
-        <img class="mr-2 cursor-pointer" src="assets/arrow-left.svg" alt="back" />
-        <a href="countries.html" class="text-gray-300 text-2xl uppercase font-bold hover:text-white">BACK</a>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 18L4 12L10 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+        <a href="countries.html" class="ml-2 text-2xl uppercase font-bold hover:text-gray200">BACK</a>
       </div>
       <div class="flex ml-auto items-center">
         <img class="ml-4 cursor-pointer" src="assets/light.svg" alt="search" />
@@ -27,11 +32,11 @@
     <h2 class="text-gray-600 uppercase text-3xl font-bold"> italy </h2>
     <div class="grid grid-cols-1 lg:grid-cols-2  gap-6">
       <div class="grid grid-cols-2 gap-6">
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm p-4">
+        <div class="bg-background-secondary shadow-lg rounded-sm p-4">
           <div class="info-box-label">confirmed</div>
           <div class="info-box-numbers info-box-label mt-2 leading-8 text-pink-400">1,330,492</div>
         </div>
-        <div class="bg-darken-blue-100 shadow-lg rounded-sm p-4">
+        <div class="bg-background-secondary shadow-lg rounded-sm p-4">
           <div class="info-box-label">active</div>
           <div class="info-box-numbers info-box-label mt-2 leading-8 text-blue-500">978,913</div>
         </div>
@@ -75,7 +80,7 @@
     </div>
   </div>
   <div class="mobile-nav-menu-container lg:hidden">
-    <div class="mobile-nav-items bg-darken-blue-100">
+    <div class="mobile-nav-items bg-background-secondary">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
@@ -84,7 +89,7 @@
           stroke-linejoin="round" />
       </svg>
     </div>
-    <a href="countries.html" class="mobile-nav-items bg-white text-gray-800 mx-2">
+    <a href="countries.html" class="mobile-nav-items bg-background-tertiary text-secondary mx-2">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
@@ -95,7 +100,7 @@
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </a>
-    <a href="index.html" class="mobile-nav-items bg-darken-blue-100">
+    <a href="index.html" class="mobile-nav-items bg-background-secondary">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M3 9L12 2L21 9V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V9Z" stroke="currentColor"
