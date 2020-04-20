@@ -1,14 +1,13 @@
 @tailwind base;
 @tailwind components;
 
-:root {
+.dark-theme {
   --text-primary: #FAF4F4;
   --text-secondary: #2d3748;
   --bg-background-primary: #212A46;
   --bg-background-secondary: #303753;
   --bg-background-tertiary: #FFF;
 }
-
 .light-theme {
   --text-primary: #212A46;
   --text-secondary: #2d3748;
@@ -16,6 +15,10 @@
   --bg-background-secondary: #FFF;
   --bg-background-tertiary: #F4F4F4;
 }
+
+:root {
+  @apply dark-theme;
+ }
 
 .nav-link {
   @apply inline-block p-3 hidden uppercase font-bold rounded-lg;

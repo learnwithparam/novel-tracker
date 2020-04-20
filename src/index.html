@@ -10,7 +10,7 @@
   <title>Home</title>
 </head>
 
-<body class="bg-background-primary pb-24 lg:pb-0">
+<body class="dark-theme bg-background-primary pb-24 lg:pb-0">
   <div class="w-full py-6 bg-background-secondary shadow-lg">
     <nav class="container flex w-4/5 mx-auto">
       <div role="title" class="flex flex-1 flex-wrap items-center">
@@ -35,7 +35,8 @@
         <div class="flex ml-auto items-center">
           <a href="index.html" class="nav-link lg:inline-block bg-gray-900 text-white">home</a>
           <a href="countries.html" class="nav-link lg:inline-block text-gray-600">countries</a>
-          <img class="ml-4" src="assets/light.svg" alt="search" />
+          <img data-theme="dark" data-next-theme="light" class="ml-4" src="assets/light.svg" alt="search" />
+          <img data-theme="light" data-next-theme="dark" class=" hidden ml-4" src="assets/moon.svg" alt="search" />
         </div>
       </div>
     </nav>
@@ -217,6 +218,7 @@
       </svg>
     </a>
   </div>
+  <script src="index.js" defer></script>
 </body>
 
 </html>
