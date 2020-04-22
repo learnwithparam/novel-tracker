@@ -3,6 +3,8 @@ const SUPPORTED_THEME = {
   dark: "dark-theme",
 };
 
+const searchInputEl = document.querySelector("#search");
+const mobileSearchButton = document.querySelector("#search-action");
 const themeSwitcherEl = document.querySelectorAll("[data-theme]");
 const body = document.querySelector("body");
 
@@ -17,7 +19,16 @@ themeSwitcherEl.forEach((item) =>
 
     evt.target.classList.add("hidden");
     nextThemeEl.classList.remove("hidden");
-    
+
     body.classList.replace(currentThemeClass, nextThemeClass);
   })
 );
+
+mobileSearchButton.addEventListener("click", function (evt) {
+  searchInputEl.focus();
+  searchInputEl.scrollIntoView({
+    block: "end",
+    inline: "nearest",
+    behavior: "smooth",
+  });
+});

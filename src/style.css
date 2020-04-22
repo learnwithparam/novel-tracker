@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .dark-theme {
   --text-primary: #FAF4F4;
   --text-secondary: #2d3748;
