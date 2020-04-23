@@ -2,6 +2,8 @@
 
 Production ready novel tracker with HTML and CSS only.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c052a35-7529-451f-8b2a-83e23c5ebd5d/deploy-status)](https://app.netlify.com/sites/novel-tracker/deploys)
+
 ## System Requirements
 
 - [git](https://git-scm.com/) v2 or greater
